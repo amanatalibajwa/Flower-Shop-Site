@@ -1,0 +1,301 @@
+/* => CSS Reset */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* =>  CSS Variables */
+:root {
+ scroll-behavior: smooth;
+
+}
+
+/* =>  Navigation Bar */
+
+#navbar {
+    display: flex;
+    /* position: sticky;
+    top: 0px; */
+   
+    /* align-items: center; */
+}
+
+.nav {
+    margin: 39px 0px;
+    position: relative;
+   
+}
+
+/* logo and img */
+#logo {}
+
+#logo img {
+    border: 2px solid red;
+    border-radius: 400px;
+    height: 141px;
+    width: 142px;
+    margin: 10px 10px;
+}
+
+/* list styling */
+#navbar ul {
+    display: flex;
+    /* margin: auto; */
+
+
+
+}
+
+/* .nav::before{
+    content:"";
+    position: absolute;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;
+} */
+#navbar ul li {
+    list-style: none;
+    font-weight: bolder;
+    font-size: 1.5rem;
+
+
+}
+
+#navbar ul li a {
+    color: white;
+    display: block;
+    margin: 15px 50px;
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-family: 'Alfa Slab One', cursive;
+
+}
+
+#navbar ul li a:hover{
+    color:  rgb(219, 104, 104);
+    background-color: white;
+    border-radius: 50px;
+    padding: 4px 15px;
+}
+
+/* Home Section */
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 478px;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+    background: url(./flower5.jpg)no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    z-index: -1;
+    opacity: 0.9;
+    color: black;
+
+    
+}
+
+#home h1 {
+    /* text-align: center; */
+    font-size: 3rem;
+    color: white;
+    /* color:white; */
+}
+
+#home p {
+    text-align: center;
+    font-size: 1.5rem;
+       color: white;
+
+    font-family: 'Alfa Slab One', cursive;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: 2px solid white;
+    background-color: rgb(219, 104, 104);
+    color: white;
+    margin: 17px;
+    font-weight: bold;
+    font-size: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: white;
+    color: rgb(219, 104, 104);
+    border: 3px solid rgb(219, 104, 104);
+    font-weight: 700;
+}
+
+#services-container{
+    margin-top: 150px;
+}
+#services {
+    margin: 34px;
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-evenly;
+    height: 75vh;
+
+}
+
+#services .box {
+    border: 4px solid rgb(246, 133, 133);
+    padding: 25px;
+    margin: 20px;
+    height: 430px;
+    width: 380px;
+    text-align: center;
+    border-radius: 23px;
+}
+
+#services .box img {
+    height: 250px;
+    width: 300px;
+    display: block;
+    margin: 10px auto;
+    border-radius: 15px;
+}
+#services .box .img{
+    width: 400px;
+}
+#services .box p{
+    padding-top: 15px;
+    font-size: 1.2rem;
+    text-align: center;
+}
+.center{
+    text-align: center;
+    font-size: 5rem;
+}
+#client h1{
+    color: white;
+    position: relative;
+    top: 40px;
+}
+.box .center{
+    padding-top: 20px;
+    font-size: 2rem;
+    font-weight: 600;
+}
+#client{
+    height: 110vh;
+}
+#client::before{
+    content: "";
+    position: absolute;
+    background: url(./client.png) no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.9;
+}
+.clients{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.clients img{
+    height: 200px;
+    width: auto;
+}
+.client-item{
+  padding-top: 50px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.client-item1 img{
+   width: 176px;
+   height: 176px;
+   padding-top: 75px;
+  padding-left: 70px;
+  padding-right: 70px;
+}
+#contact{
+    height: 82vh;
+}
+/* #contact::before{
+    content: "";
+    position: absolute;
+    background: url(./sky3.jpeg);
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.9;
+} */
+
+.contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-box input,
+.contact-box textarea{
+    width: 100%;
+    padding: 0.3rem;
+    margin: 10px auto;
+    border-radius: 5px;
+    font-size: 1.1rem;
+}
+.contact-box form{
+    width: 35%;
+    padding: 40px;
+}
+.contact-box label{
+    font-size: 1.7rem;
+    font-weight: 800;
+}
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+.button button{
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: black;
+    background-color: white;
+    
+}
+.button button:hover{
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+#information{ 
+    /* position:relative;
+    left: 400px; */
+    margin: 0px auto;
+    text-align: center;
+    /* width: 650px; */
+    padding: 10px;
+}
+#information img{
+    width: 200px;
+    height: auto;
+    cursor: pointer;
+}
+
+footer{
+    text-align: center;
+    background-color: rgb(74, 73, 73);
+    color: white;
+    font-size: 20px;
+    padding: 2px;
+}
